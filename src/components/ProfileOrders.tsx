@@ -76,7 +76,7 @@ const ProfileOrders: React.FC<ProfileOrdersProps> = ({ userId }) => {
     const getStatusColor = (status: string) => {
         switch (status) {
             case 'pending': return 'text-orange-600 bg-orange-50 border-orange-100';
-            case 'processing': return 'text-blue-600 bg-blue-50 border-blue-100';
+            case 'processing': return 'text-yellow-800 bg-yellow-100 border-yellow-200';
             case 'shipped': return 'text-purple-600 bg-purple-50 border-purple-100';
             case 'delivered': return 'text-green-600 bg-green-50 border-green-100';
             case 'cancelled': return 'text-red-600 bg-red-50 border-red-100';

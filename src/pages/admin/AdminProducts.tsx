@@ -228,7 +228,7 @@ const AdminProducts: React.FC = () => {
                                                         setEditingProduct(product);
                                                         setIsModalOpen(true);
                                                     }}
-                                                    className="inline-flex items-center px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-medium rounded hover:bg-blue-100 transition-colors"
+                                                    className="inline-flex items-center px-3 py-1.5 bg-yellow-50 text-yellow-700 text-xs font-medium rounded hover:bg-yellow-100 transition-colors"
                                                 >
                                                     Düzenle
                                                 </button>

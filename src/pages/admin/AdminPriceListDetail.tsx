@@ -130,7 +130,7 @@ const AdminPriceListDetail: React.FC = () => {
                                 <th className="p-4">Ürün</th>
                                 <th className="p-4">Varyant</th>
                                 <th className="p-4 w-32 text-right text-gray-400">Base Fiyat</th>
-                                <th className="p-4 w-40 text-right bg-blue-50 text-blue-800">
+                                <th className="p-4 w-40 text-right bg-yellow-50 text-yellow-800">
                                     {priceList.name} Fiyatı
                                 </th>
                             </tr>
@@ -150,15 +150,15 @@ const AdminPriceListDetail: React.FC = () => {
                                     </td>
 
                                     {/* Editable List Price */}
-                                    <td className="p-4 text-right bg-blue-50/20">
+                                    <td className="p-4 text-right bg-yellow-50/20">
                                         <div className="relative">
                                             <input
                                                 type="number"
                                                 step="0.01"
                                                 placeholder={v.base_price.toString()}
-                                                className={`w-full text-right bg-transparent border rounded px-2 py-1.5 text-sm transition-all focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent ${v.list_price
-                                                        ? 'border-blue-200 text-blue-900 font-bold'
-                                                        : 'border-dashed border-gray-300 text-gray-400'
+                                                className={`w-full text-right bg-transparent border rounded px-2 py-1.5 text-sm transition-all focus:bg-white focus:ring-2 focus:ring-[#f0c961] focus:border-transparent ${v.list_price
+                                                    ? 'border-yellow-200 text-yellow-900 font-bold'
+                                                    : 'border-dashed border-gray-300 text-gray-400'
                                                     }`}
                                                 value={v.list_price || ''}
                                                 /* Optimistic update for UI responsiveness */
@@ -176,7 +176,7 @@ const AdminPriceListDetail: React.FC = () => {
                                                 }}
                                             />
                                             {updating === v.id && (
-                                                <div className="absolute right-2 top-2.5 w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping"></div>
+                                                <div className="absolute right-2 top-2.5 w-1.5 h-1.5 bg-[#f0c961] rounded-full animate-ping"></div>
                                             )}
                                         </div>
                                     </td>

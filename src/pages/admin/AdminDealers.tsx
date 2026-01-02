@@ -124,7 +124,7 @@ const AdminDealers: React.FC = () => {
                                     <p className="md:col-span-2"><strong className="text-gray-900">Adres:</strong> {req.address}</p>
                                     <p className="md:col-span-2 text-xs text-gray-400 mt-2">Başvuru Tarihi: {new Date(req.created_at).toLocaleString('tr-TR')}</p>
                                     {req.profiles && (
-                                        <p className="md:col-span-2 text-xs text-blue-500 mt-1">Eşleşen Profil: {req.profiles.full_name} ({req.profiles.email})</p>
+                                        <p className="md:col-span-2 text-xs text-yellow-700 mt-1">Eşleşen Profil: {req.profiles.full_name} ({req.profiles.email})</p>
                                     )}
                                 </div>
                             </div>

@@ -60,7 +60,7 @@ const AdminOrders: React.FC = () => {
     const getStatusBadge = (status: string) => {
         switch (status) {
             case 'pending': return <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full border border-yellow-200">Beklemede</span>;
-            case 'approved': return <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full border border-blue-200">Onaylandı</span>;
+            case 'approved': return <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full border border-yellow-200">Onaylandı</span>;
             case 'shipped': return <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full border border-purple-200">Kargolandı</span>;
             case 'delivered': return <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full border border-green-200">Teslim Edildi</span>;
             case 'cancelled': return <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full border border-red-200">İptal</span>;
@@ -118,7 +118,7 @@ const AdminOrders: React.FC = () => {
                                         <td className="p-4 text-center">
                                             <Link
                                                 to={`/admin/orders/${order.id}`}
-                                                className="inline-flex items-center justify-center px-3 py-1.5 border border-transparent text-xs font-medium rounded text-blue-700 bg-blue-50 hover:bg-blue-100 transition-colors"
+                                                className="inline-flex items-center justify-center px-3 py-1.5 border border-transparent text-xs font-medium rounded text-yellow-700 bg-yellow-50 hover:bg-yellow-100 transition-colors"
                                             >
                                                 Detay
                                             </Link>

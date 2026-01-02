@@ -21,8 +21,7 @@ export default function Footer() {
                     <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-widest text-[#f0c961]">Kurumsal</h4>
                     <ul className="space-y-3 text-sm text-gray-400">
                         <li><a href="#" className="hover:text-white transition-colors">Hakkımızda</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Kariyer</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Sertifikalarımız</a></li>
+
                         <li><Link to="/bayi-basvuru" className="hover:text-white transition-colors font-bold text-[#f0c961]">Bayilik Başvurusu</Link></li>
                     </ul>
                 </div>
@@ -35,7 +34,7 @@ export default function Footer() {
                         <li><Link to="/kurumsal/kvkk-aydinlatma-metni" className="hover:text-white transition-colors">KVKK Aydınlatma Metni</Link></li>
                         <li><Link to="/kurumsal/mesafeli-satis-sozlesmesi" className="hover:text-white transition-colors">Mesafeli Satış Sözleşmesi</Link></li>
                         <li><Link to="/kurumsal/iptal-iade-kosullari" className="hover:text-white transition-colors">İptal ve İade Koşulları</Link></li>
-                        <li><Link to="/kurumsal/veri-sahibi-basvuru-formu" className="hover:text-white transition-colors">Veri Sahibi Başvuru Formu</Link></li>
+
                     </ul>
                 </div>
 

@@ -347,6 +347,10 @@ export default function Header() {
                                     <span className="absolute bottom-4 left-1/2 -translate-x-1/2 w-0 h-[3px] bg-[#f0c961] rounded-t-full transition-all duration-300 group-hover:w-full opacity-0 group-hover:opacity-100"></span>
                                 </div>
                             ))}
+                            <Link to="/bayi-basvuru" className="py-4 text-[12px] font-bold text-gray-600 hover:text-[#f0c961] whitespace-nowrap transition-colors tracking-widest relative group">
+                                BAYİLİK BAŞVURUSU
+                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 w-0 h-[3px] bg-[#f0c961] rounded-t-full transition-all duration-300 group-hover:w-full opacity-0 group-hover:opacity-100"></span>
+                            </Link>
                             <Link to="#" className="py-4 text-[12px] font-bold text-gray-600 hover:text-[#f0c961] whitespace-nowrap transition-colors tracking-widest relative group">
                                 HAKKIMIZDA
                                 <span className="absolute bottom-4 left-1/2 -translate-x-1/2 w-0 h-[3px] bg-[#f0c961] rounded-t-full transition-all duration-300 group-hover:w-full opacity-0 group-hover:opacity-100"></span>
@@ -418,6 +422,7 @@ export default function Header() {
 
                             <div className="pt-4 space-y-2">
                                 <Link to="/products" className="block py-3 font-bold text-gray-800 border-b border-gray-100 hover:text-[#f0c961] text-sm">TÜM ÜRÜNLER</Link>
+                                <Link to="/bayi-basvuru" className="block py-3 font-bold text-gray-800 border-b border-gray-100 hover:text-[#f0c961] text-sm">BAYİLİK BAŞVURUSU</Link>
                                 <Link to="#" className="block py-3 font-bold text-gray-800 border-b border-gray-100 hover:text-[#f0c961] text-sm">HAKKIMIZDA</Link>
                                 <Link to="#" className="block py-3 font-bold text-gray-800 hover:text-[#f0c961] text-sm">İLETİŞİM</Link>
                             </div>

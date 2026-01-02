@@ -277,7 +277,7 @@ id, name, sku, stock, base_price, is_active,
                                                     placeholder={pl.type === 'b2c' ? v.base_price.toString() : '-'}
                                                     value={currentPrice || ''}
                                                     onChange={(e) => handlePriceChange(v.id, pl.id, Number(e.target.value))}
-                                                    className="w-24 px-2 py-1 text-center text-gray-600 border border-gray-100 rounded focus:ring-1 focus:ring-blue-400 focus:border-blue-400 bg-gray-50/50 hover:bg-white transition-colors"
+                                                    className="w-24 px-2 py-1 text-center text-gray-600 border border-gray-100 rounded focus:ring-1 focus:ring-[#f0c961] focus:border-[#f0c961] bg-gray-50/50 hover:bg-white transition-colors"
                                                 />
                                             </td>
                                         );
@@ -290,7 +290,7 @@ id, name, sku, stock, base_price, is_active,
                                                     setEditingVariant(v);
                                                     setIsVariantModalOpen(true);
                                                 }}
-                                                className="text-xs text-blue-600 hover:text-blue-900 bg-blue-50 px-2 py-1 rounded"
+                                                className="text-xs text-yellow-700 hover:text-yellow-900 bg-yellow-50 px-2 py-1 rounded"
                                             >
                                                 Düzenle
                                             </button>

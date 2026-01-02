@@ -65,8 +65,8 @@ const AdminPriceLists: React.FC = () => {
                                     <td className="p-4 text-gray-600">{pl.currency}</td>
                                     <td className="p-4 text-center">
                                         <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${(pl.type || '') === 'b2b'
-                                                ? 'bg-purple-100 text-purple-800 border-purple-200'
-                                                : 'bg-blue-100 text-blue-800 border-blue-200'
+                                            ? 'bg-purple-100 text-purple-800 border-purple-200'
+                                            : 'bg-yellow-100 text-yellow-800 border-yellow-200'
                                             }`}>
                                             {(pl.type || '?').toUpperCase()}
                                         </span>

@@ -324,7 +324,7 @@ const AdminCategories: React.FC = () => {
                                     setParentForNew(category);
                                     setIsModalOpen(true);
                                 }}
-                                className="text-xs text-blue-600 hover:text-blue-900 flex items-center gap-1 bg-blue-50 px-2 py-1 rounded"
+                                className="text-xs text-yellow-700 hover:text-yellow-900 flex items-center gap-1 bg-yellow-50 px-2 py-1 rounded"
                                 title="Alt Kategori Ekle"
                             >
                                 <span>+ Alt</span>
