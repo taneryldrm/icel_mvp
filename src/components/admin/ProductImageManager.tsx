@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { supabase } from '../../lib/supabaseClient';
 
 export interface ProductImage {

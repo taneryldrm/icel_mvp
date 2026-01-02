@@ -268,7 +268,7 @@ export default function Header() {
                                         <div className="p-4 text-center text-gray-400 text-sm">Aranıyor...</div>
                                     ) : searchResults.length > 0 ? (
                                         <ul>
-                                            {searchResults.map((item, idx) => (
+                                            {searchResults.map((item) => (
                                                 <li key={`${item.type}-${item.id}`} className="border-b border-gray-50 last:border-0 hover:bg-[#fffaf4] transition-colors">
                                                     <Link
                                                         to={item.type === 'category' ? `/kategori/${item.slug}` : `/products/${item.slug}`}

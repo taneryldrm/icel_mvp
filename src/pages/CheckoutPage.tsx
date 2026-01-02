@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { fetchUserRole, calculateVariantPrice } from '../lib/pricing';
 import { TURKEY_DATA } from '../constants/turkey-data';
 import SearchableSelect from '../components/SearchableSelect';
@@ -35,7 +35,7 @@ const CheckoutPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<CheckoutItem[]>([]);
     const [cartTotal, setCartTotal] = useState<number>(0);
     const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+    const [, setError] = useState<string | null>(null);
     const [addresses, setAddresses] = useState<Address[]>([]);
     const [selectedAddressId, setSelectedAddressId] = useState<string | null>(null);
     const [showAddressForm, setShowAddressForm] = useState<boolean>(false);
@@ -195,7 +195,7 @@ const CheckoutPage: React.FC = () => {
 
                 finalOrderItems.push({
                     variant_id: variant.id,
-                    product_id: variant.products?.id, // Add product_id
+                    product_id: variant.products?.[0]?.id, // Add product_id
                     quantity: qty,
                     unit_price_snapshot: unitPrice,
                     line_total: lineTotal,

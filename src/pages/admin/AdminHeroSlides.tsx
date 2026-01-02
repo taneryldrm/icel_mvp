@@ -44,7 +44,7 @@ const AdminHeroSlides: React.FC = () => {
     const [imagePreview, setImagePreview] = useState<string | null>(null);
     const [uploading, setUploading] = useState(false);
 
-    const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm<FormInputs>();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm<FormInputs>();
 
     // --- Fetch Data ---
     useEffect(() => {
@@ -114,7 +114,7 @@ const AdminHeroSlides: React.FC = () => {
         });
     };
 
-    const handleDelete = async (id: string, imageUrl: string) => {
+    const handleDelete = async (id: string) => {
         if (!window.confirm('Bu slaytı silmek istediğinize emin misiniz?')) return;
 
         // 1. Delete DB record
@@ -415,7 +415,7 @@ const AdminHeroSlides: React.FC = () => {
                                             <Edit className="w-4 h-4" /> Düzenle
                                         </button>
                                         <button
-                                            onClick={() => handleDelete(slide.id, slide.image_url)}
+                                            onClick={() => handleDelete(slide.id)}
                                             className="flex items-center justify-center px-3 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg transition-colors"
                                         >
                                             <Trash2 className="w-4 h-4" />

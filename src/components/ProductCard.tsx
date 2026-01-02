@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { supabase } from '../lib/supabaseClient';
 import { getOrCreateActiveCart } from '../lib/cart';
-import { motion } from 'framer-motion';
+
 
 interface ProductVariant {
     id: string;

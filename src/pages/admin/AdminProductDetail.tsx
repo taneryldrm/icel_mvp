@@ -27,7 +27,7 @@ const AdminProductDetail: React.FC = () => {
     const [priceLists, setPriceLists] = useState<PriceList[]>([]);
     const [productName, setProductName] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(true);
-    const [updating, setUpdating] = useState<string | null>(null); // Hangi varyant güncelleniyor
+    const [, setUpdating] = useState<string | null>(null); // Hangi varyant güncelleniyor
     const [isVariantModalOpen, setIsVariantModalOpen] = useState(false);
     const [editingVariant, setEditingVariant] = useState<VariantDisplay | null>(null);
 
